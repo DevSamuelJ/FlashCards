@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import { Card } from './assets/card'
 
 function App() {
 
 
   return (
     <>
-      
+     <Card/>
     </>
   )
 }

@@ -22,12 +22,14 @@ function App() {
 
   return (
     <>
-     <Card text={answerIsVisible ? currentQuestion.answer : currentQuestion.text}/>
-     <NavBar 
-     setCurrentIndex={setCurrentIndex} 
-     currentIndex={currentIndex}
-     lastIndex={lastIndex}
-     />
+      <Card text={answerIsVisible ? currentQuestion.answer : currentQuestion.text} />
+      <NavBar
+        setCurrentIndex={setCurrentIndex}
+        currentIndex={currentIndex}
+        lastIndex={lastIndex}
+        answerIsVisible={answerIsVisible}
+        setAnswerIsVisible={setAnswerIsVisible}
+      />
     </>
   )
 }
